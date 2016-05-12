@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- https://github.com/engel731/Livre-or.git
+Fait par Bazire Tanguy (engel731) le 03/05/2016
+Document xml openSource -->
+
+<?xml-stylesheet type="text/xsl" href="comment.xsl" ?>
+ 
+<!DOCTYPE livreOr [ 
+    <!ELEMENT livreOr (commentaire+)>
+    <!ELEMENT commentaire (titre, pseudo, contenue)>
+        <!ATTLIST commentaire id ID #REQUIRED>
+        <!ATTLIST commentaire note (zero | un | deux | trois | quatre) #REQUIRED>
+        
+        <!ELEMENT titre (#PCDATA)>
+        <!ELEMENT pseudo (#PCDATA)>
+        <!ELEMENT contenue (#PCDATA)>
+]>
+ 
+<livreOr>
+    <commentaire id="5" note="un">
+        <titre>platea dictumst</titre>
+        <pseudo>justo578</pseudo>
+        <contenu>
+            Aliquam id euismod magna, non dapibus erat. Phasellus eu arcu in elit porttitor vulputate. 
+            Aliquam non nisl sem. Quisque enim libero.
+        </contenu>
+    </commentaire>
+
+     <commentaire id="4" note="deux">
+        <titre>fringilla leo</titre>
+        <pseudo>losdo89</pseudo>
+        <contenu>
+            Phasellus eu arcu in elit porttitor vulputate. Aliquam id euismod magna, non dapibus erat
+            Aliquam non nislsem. Quisque enim libero.
+        </contenu>
+    </commentaire>
+
+    <commentaire id="3" note="zero">
+        <titre>Pellentesque tincidunt</titre>
+        <pseudo>Suspendisse987</pseudo>
+        <contenu>
+            Suspendisse fringilla leo vel congue porta. In hac habitasse platea dictumst. Praesent massa nisl,
+            suscipit ac pretium vel, tempor quis ligula.
+        </contenu>
+    </commentaire>
+
+    <commentaire  id="2" note="quatre">
+        <titre>velit fringilla</titre>
+        <pseudo>tincidunt854</pseudo>
+        <contenu>
+            Curabitur dapibus dignissim ornare. Vestibulum at ullamcorper odio, non vestibulum lacus.
+            Pellentesque tincidunt tortor vel velit fringilla, in dapibus est viverra.
+        </contenu>
+    </commentaire>
+
+    <commentaire id="1" note="trois">
+        <titre>dapibus dignissim</titre>
+        <pseudo>engel731</pseudo>
+        <contenu>
+            Maecenas leo lacus, porta et imperdiet quis, vehicula sit amet nisl. Etiam id imperdiet nibh, 
+            non interdum massa. Phasellus molestie id magna ullamcorper dignissim.
+        </contenu>
+    </commentaire>
+</livreOr>
